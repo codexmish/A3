@@ -6,10 +6,10 @@ function newPrice(currentPrice, discount) {
   }
 
   const discountAmount = (currentPrice * discount) / 100;
-  const lastPrice = Math.floor(currentPrice - discountAmount);
+  const lastPrice = currentPrice - discountAmount;
 
-  // console.log(lastPrice)
-  return lastPrice;
+  console.log(lastPrice)
+  return lastPrice.toFixed(3);
 }
 
-// newPrice(222,5.31)
+newPrice(200 ,5)
